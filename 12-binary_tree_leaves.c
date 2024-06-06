@@ -10,6 +10,7 @@ size_t right_leaves, left_leaves, total;
 if (tree == NULL)
 return (0);
 /**
+ * A leaf node is a node that does't have any children
  * Total number of leaves is the sum of leaves in the leaf subtree
  * leaves in the right subtree
  * Plus 1 for the current leaf node
