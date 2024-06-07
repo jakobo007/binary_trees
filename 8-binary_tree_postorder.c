@@ -6,7 +6,8 @@
  * The value in the node must be passed as a parameter in func
  * Return: Nothing if tree or func is NULL
 */
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int)){
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
+{
 if (tree == NULL || func == NULL)
 return;
 binary_tree_postorder(tree->left, func);

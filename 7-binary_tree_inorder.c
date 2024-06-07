@@ -6,7 +6,8 @@
  * The value in the node must be passed as parameter to func
  * Return: Nothing
 */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int)){
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
+{
 if (tree == NULL || func == NULL)
 return;
 binary_tree_inorder(tree->left, func);

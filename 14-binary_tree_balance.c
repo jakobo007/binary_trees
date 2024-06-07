@@ -4,7 +4,8 @@
  * @tree: pointer to the node to measure
  * Return: 0 if tree is null
 */
-int binary_tree_balance(const binary_tree_t *tree){
+int binary_tree_balance(const binary_tree_t *tree)
+{
 /**
  * balance factor is the difference btwn the height of the 
  * left and right subtrees

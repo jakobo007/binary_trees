@@ -12,18 +12,17 @@ int check_level(const binary_tree_t *node, size_t depth, size_t height)
 {
 if (node == NULL)
 {
- return 1;
- }
+ return (1);
+}
 if (node->left == NULL && node->right == NULL)
 {
 return (depth == height);
 }
 if (node->left != NULL && node->right != NULL)
 {
-return check_level(node->left, depth + 1, height) &&
-check_level(node->right, depth + 1, height);
+return (check_level(node->left, depth + 1, height) && check_level(node->right, depth + 1, height));
 }
-return 0;
+return (0);
 }
 
 /**
@@ -32,7 +31,8 @@ return 0;
  * Return: 0 if tree is null
 */
 
-int binary_tree_is_perfect(const binary_tree_t *tree){
+int binary_tree_is_perfect(const binary_tree_t *tree)
+{
 /**
  * A perfect binary tree is a tree in which all 
  * All internal nodes have exactly two children
@@ -41,5 +41,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree){
 size_t height = binary_tree_height(tree) - 1;
 if (tree == NULL)
 return (0);
-return binary_tree_is_full(tree) && check_level(tree, 0, height);
+return (binary_tree_is_full(tree) && check_level(tree, 0, height));
 }

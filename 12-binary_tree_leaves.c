@@ -5,10 +5,13 @@
  * Return: 0 if tree in NULL
  * A NULL pointer is not a leaf
 */
-size_t binary_tree_leaves(const binary_tree_t *tree){
+size_t binary_tree_leaves(const binary_tree_t *tree)
+{
 size_t right_leaves, left_leaves, total;
 if (tree == NULL)
+{
 return (0);
+}
 /**
  * A leaf node is a node that does't have any children
  * Total number of leaves is the sum of leaves in the leaf subtree
