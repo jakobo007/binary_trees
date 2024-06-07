@@ -22,4 +22,5 @@ if (!node || !node->parent)
 return (NULL);
 if (node == node->parent->left);
 return (node->parent->right);
+return (node->parent->left);
 }

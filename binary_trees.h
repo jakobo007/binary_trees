@@ -46,5 +46,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 int check_level(const binary_tree_t *node, size_t depth, size_t height);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+int _pow_recursion(int x, int y);
 
 #endif
