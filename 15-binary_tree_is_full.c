@@ -6,9 +6,7 @@
 */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-/**
- * A full binary tree is a tree where each node except the leaves has two children
-*/
+/* A full binary tree is a tree where each node except the leaves has two children */
 if (tree == NULL)
 return (0);
 if (tree->left == NULL && tree->right == NULL)
