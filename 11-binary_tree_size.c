@@ -12,9 +12,7 @@ if (tree == NULL)
 return (0);
 }
 /**
- * the total size of the tree is the sum of the left subtree's size
- * the size of the right subtree's size
- * Plus 1 for the current node
+ * the total size of the tree is the sum of the left subtree's size the size of the right subtree's size Plus 1 for the current node
 */
 left_size = binary_tree_size(tree->left);
 right_size = binary_tree_size(tree->right);

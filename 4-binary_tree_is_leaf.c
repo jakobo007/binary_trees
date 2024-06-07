@@ -10,9 +10,7 @@ if (node == NULL)
 {
 return (0);
 }
-/**
- * A node is a leaf if both their pointers are null
-*/
+/* A node is a leaf if both their pointers are null */
 if (node->left == NULL && node->right == NULL)
 {
 return (1);

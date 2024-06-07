@@ -10,9 +10,7 @@ if (node == NULL)
 {
 return (0);
 }
-/**
- * A node is a root if it's parent pointer is null
-*/
+/* A node is a root if it's parent pointer is null */
 if (node->parent == NULL)
 {
 return (1);
